@@ -9,9 +9,16 @@ from llama_index.llms.groq import Groq
 from pathlib import Path
 import shutil
 from io import BytesIO
+import nest_asyncio
 
-# Set OpenAI API Key
-#openai.api_key = st.secrets["openai_key"]
+nest_asyncio.apply()
+
+
+# API access to llama-cloud
+os.environ["LLAMA_CLOUD_API_KEY"] = "llx-"
+
+# Using OpenAI API for embeddings/llms
+os.environ["OPENAI_API_KEY"] = "sk-"
 Groq.api_key = st.secrets["groq_key"]
 
 def main():
