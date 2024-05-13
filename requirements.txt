@@ -1,0 +1,13 @@
+streamlit
+openai
+llama-index
+nltk
+pypdf2
+llama-index-llms-openai
+llama-index-llms-groq
+llama-parse
+pathlib
+llama-index-core
+llama-index-embeddings-openai
+llama-index-postprocessor-flag-embedding-reranker
+git+https://github.com/FlagOpen/FlagEmbedding.git
